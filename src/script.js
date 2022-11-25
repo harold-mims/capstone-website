@@ -11,24 +11,6 @@ function toggleNavMenu() {
 }
 
 /* Loops through and adds an event handler to any of the gallery photos so that they can be displayed properly */
-var elements = document.getElementsByClassName("gallery-item-wrapper");
-for (var i = 0; i < elements.length; i++) {
-
-    elements[i].addEventListener("click", function () {
-        checkIfElementIsDisplayed(this.parentElement)
-        checkIfElementIsDisplayed(this)
-
-        var children = this.children;
-
-        for (var j = 0; j < children.length; j++) {
-            checkIfElementIsDisplayed(children[j])
-        }
-    }, true);
-
-}
-
-
-/* Loops through and adds an event handler to any of the gallery photos so that they can be displayed properly */
 var elements = document.getElementsByClassName("modal-thumbnail");
 for (var i = 0; i < elements.length; i++) {
 
@@ -38,6 +20,7 @@ for (var i = 0; i < elements.length; i++) {
 
 }
 
+/* Adds an event handler on the rest of the document in order to detect a click outside the object */
 let modalImages = document.querySelectorAll(".modal-image");
 document.addEventListener("click", function (event) {
     console.log("click event on document");
@@ -54,15 +37,6 @@ document.addEventListener("click", function (event) {
 
 });
 
-
-function checkIfElementIsDisplayed(divToCheck) {
-    if (divToCheck.className.includes("displayed")) {
-        divToCheck.className = divToCheck.className.replace("displayed", "");
-    } else {
-        divToCheck.className += " displayed";
-    }
-}
-
 function checkIfModalIsDisplayed(divToCheck) {
     if (divToCheck.className.includes("modal-displayed")) {
         divToCheck.className = divToCheck.className.replace("modal-displayed", "");
@@ -70,26 +44,3 @@ function checkIfModalIsDisplayed(divToCheck) {
         divToCheck.className += " modal-displayed";
     }
 }
-
-
-/*
-    This function is used so that whenever the user clicks on one of the thumbnails in the 
-    photo gallery it will assign a new class to the wrapper, growing the photo and displaying
-    the description
-    */
-
-function displayPhoto(photoToUpdate) {
-    /*
-    var arg = document.getElementsByClassName("gallery-text");
-    if (arg.className === "gallery-text") {
-        arg.className += " displayed";
-    } else {
-        arg.className = "gallery-text";
-    }*/
-
-
-
-}
-
-
-
