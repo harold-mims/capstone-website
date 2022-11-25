@@ -8,4 +8,3 @@ This Website is still a work in progress and will be updated throughout the cour
 
 Attribution:
 Photos Used from the Texas A&M Photo Repository are used in accordance with the Student Rules as this website was created as part of a course project.
-# website

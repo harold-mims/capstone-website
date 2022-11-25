@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title of Website -->
+    <title>LMS - Capstone</title>
+    <!-- Link to the CSS file -->
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/gallery.css">
+    <link rel="stylesheet" href="../style/modal-image.css">
+    <!-- Link to the Javascript File -->
+    <script src="../src/script.js" defer></script>
+</head>
+
+<body class="content">
+    <!-- Navigation Bar -->
+    <div class="header centered-text">
+        <div class="reponsive-top-bar">
+            <a href="../index.html#home" class="header-logo">&#955;</a>
+            <a href="javascript:void(0);" class="icon" onclick="toggleNavMenu()">&#9776;</a>
+        </div>
+
+        <!-- Navigation Menu -->
+        <nav class="header-nav" id="nav-menu-responsive">
+
+            <a href="../index.html">Home</a>
+            <a href="hardware-approach.html">Hardware</a>
+            <a href="software-approach.html">Software</a>
+            <a href="fbd-approach.html">FBD</a>
+            <a href="specifications.html">Specifications</a>
+
+            <!-- Dropdown Menu For Technical Approach 
+            <div class="dropdown-wrapper">
+                <a href="../index.html#technical-approach">
+                    <button class="dropdown-btn content">Technical Approach</button>
+                </a>
+                <div class="dropdown-items-wrapper">
+                    <a href="hardware-approach.html">Hardware</a>
+                    <a href="software-approach.html">Software</a>
+                    <a href="fbd-approach.html">FBD</a>
+                    <a href="specifications.html">Specifications</a>
+                </div>
+            </div> -->
+        </nav>
+    </div>
+
+    <!-- Main content -->
+    <div class="flex-col-c-c .full-width">
+        <section class="main-sections-wrapper">
+            <div class="flex-row-c-c flex-wrap-w full-width full-height">
+                <span class="section-title centered-text">Software Overview</span>
+                
+                <div class="flex-col-c-c section-description">
+                    <p>
+                        This Text is also a work in progress and needs to be updated with a description of the two main software sections
+                    </p>
+                </div>
+                
+
+            </div>
+        </section>
+
+        <section class="main-sections-wrapper flex-col-c-c full-width" id="technology-used-wrapper">
+            <div class="subsection-divider">
+                <hr class="subsection-hr">
+                <span class="subsection-header">Technology Used</span>
+                <hr class="subsection-hr">
+            </div>
+            <div class="tech-used-wrapper">
+                <div id="github-link">
+                    <div class="dev-icon-wrapper centered-text">
+                        <a href="https://github.com/Lambda-Medical-Solutions">
+                            <img class="dev-icon" id="github-link-icon"
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" />
+                        </a>
+                        <hr class="dev-icon-hr">
+                        <span class="main-subtitle">Our Github Organization</span>
+
+                    </div>
+                </div>
+                <div class="dev-icons-container">
+                    <div class="dev-icon-wrapper centered-text">
+                        <img class="dev-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-plain.svg" />
+                        <hr class="dev-icon-hr">
+                        <span class="main-subtitle">C</span>
+                    </div>
+                    <div class="dev-icon-wrapper centered-text">
+                        <img class="dev-icon"
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-plain.svg" />
+                        <hr class="dev-icon-hr">
+                        <span class="main-subtitle">Flutter</span>
+                    </div>
+                    <div class="dev-icon-wrapper centered-text">
+                        <img class="dev-icon"
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dart/dart-plain.svg" />
+                        <hr class="dev-icon-hr">
+                        <span class="main-subtitle">Dart</span>
+                    </div>
+                    <div class="dev-icon-wrapper centered-text">
+                        <img class="dev-icon"
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/arduino/arduino-plain.svg" />
+                        <hr class="dev-icon-hr">
+                        <span class="main-subtitle">Arduino</span>
+                    </div>
+                    <div class="dev-icon-wrapper centered-text">
+                        <img class="dev-icon"
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-plain.svg" />
+                        <hr class="dev-icon-hr">
+                        <span class="main-subtitle">Git</span>
+                    </div>
+                    <div class="dev-icon-wrapper centered-text">
+                        <img class="dev-icon"
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-plain.svg" />
+                        <hr class="dev-icon-hr">
+                        <span class="main-subtitle">VS Code</span>
+                    </div>
+                    <div class="dev-icon-wrapper centered-text">
+                        <hr class="dev-icon-hr">
+                        <span class="main-subtitle">CCS</span>
+                    </div>
+                    <div class="dev-icon-wrapper centered-text">
+                        <hr class="dev-icon-hr">
+                        <span class="main-subtitle">Bluetooth</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="main-sections-wrapper flex-col-c-c full-width" id="software-flow-charts">
+            <div class="subsection-divider">
+                <hr class="subsection-hr">
+                <span class="subsection-header">Software Flowcharts</span>
+                <hr class="subsection-hr">
+            </div>
+
+            <!-- The Main Images used for the slideshow -->
+            <div class="modal-gallery-container flex-row-c-c flex-wrap-w">
+                <div class="modal-item-wrapper flex-col-c-c">
+                    <img class="modal-thumbnail" src="../src/images/flowcharts/mcu-flowchart.png">
+                    <span class="modal-title">MCU Flowchart</span>
+                    <div class="modal flex-row-c-c flex-wrap-w  full-width">
+                        <span class="exit-modal">&times;</span>
+                        <img class="modal-image" src="../src/images/flowcharts/mcu-flowchart.png">
+                    </div>
+                </div>
+                <div class="modal-item-wrapper flex-col-c-c">
+                    <img class="modal-thumbnail" src="../src/images/flowcharts/companion-app-flowchart.png">
+                    <span class="modal-title">Companion App Flowchart</span>
+                    <div class="modal flex-row-c-c flex-wrap-w  full-width">
+                        <span class="exit-modal">&times;</span>
+                        <img class="modal-image" src="../src/images/flowcharts/companion-app-flowchart.png ">
+                    </div>
+                </div>
+                <div class="modal-item-wrapper flex-col-c-c">
+                    <img class="modal-thumbnail" src="../src/images/flowcharts/pressure-regulator-flowchart.png">
+                    <span class="modal-title">Pressure Regulator Flowchart</span>
+                    <div class="modal flex-row-c-c flex-wrap-w  full-width">
+                        <span class="exit-modal">&times;</span>
+                        <img class="modal-image" src="../src/images/flowcharts/pressure-regulator-flowchart.png">                        
+                    </div>
+                </div>
+        </section>
+    </div>
+
+    <div class="footer">
+        <span>Texas A&M University Capstone Project</span>
+
+    </div>
+</body>
+
+</html>
