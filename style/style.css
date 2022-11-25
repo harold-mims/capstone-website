@@ -472,6 +472,18 @@ body {
     width: min-content
 }
 
+/* FBD */
+#fbd-photo {
+    width: 100%;
+    border-radius: 4px;
+    padding: 0vh 2.5vh;
+}
+
+#fbd-wrapper {
+    max-width:90vh;
+
+}
+
 /* Styling For the Footer */
 .footer {
     text-align: center;
