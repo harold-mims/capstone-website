@@ -58,6 +58,7 @@
     display: block;
 
     max-width: 90%;
+    max-height: 90%;
     
 
     animation-name: modal-zoom;

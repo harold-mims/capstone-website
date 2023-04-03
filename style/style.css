@@ -479,10 +479,6 @@ body {
     padding: 0vh 2.5vh;
 }
 
-#fbd-wrapper {
-    max-width:90vh;
-
-}
 
 /* Styling For the Footer */
 .footer {
@@ -579,6 +575,10 @@ body {
         min-height: 50px;
         max-height: 30vh;
 
+    }
+
+    .mobile-col-reverse {
+        flex-direction: column-reverse;
     }
 
     .team-member-photo {

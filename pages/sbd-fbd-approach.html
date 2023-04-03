@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="../style/style.css">
     <link rel="stylesheet" href="../style/gallery.css">
     <link rel="stylesheet" href="../style/modal-image.css">
+    <link rel="stylesheet" href="../style/fbd.css">
     <!-- Link to the Javascript File -->
     <script src="../src/script.js" defer></script>
 </head>
@@ -46,17 +47,26 @@
             </div> -->
         </nav>
     </div>
+    <div></div>
+
+    <!-- Main content 
+    <div class="flex-col-c-c .full-width">
+        <section class="main-sections-wrapper flex-col-c-c full-width" id="fbd-wrapper">
+            <span class="main-title">Functional Block Diagram</span>
+            <hr class="section-hr">
+            <img id="fbd-photo" src="../src/images/fbd.png">
+        </section>
+    </div>-->
 
     <!-- Main content -->
     <div class="flex-col-c-c .full-width">
         <section class="main-sections-wrapper">
             <div class="flex-row-c-c flex-wrap-w full-width full-height">
-                <span class="section-title centered-text">Hardware Overview</span>
+                <span class="section-title centered-text">System and Function Block Diagrams</span>
                 
                 <div class="flex-col-c-c section-description">
                     <p>
-                        The CAD models and more robust documentation will be added to the website when we 
-                        have more time after this project is complete and the deliverables have been delivered.
+                        A Visual Representation Of The Core Design And Function Of Our Project.
                     </p>
                     <a href="#sbd" class="main-btn" id="learn-more-button">Learn More</a>
 
@@ -66,58 +76,37 @@
             </div>
         </section>
 
-        <!-- Early Concepts -->
-        <section class="main-sections-wrapper flex-col-c-c full-width" id="early-concepts">
-            <div class="subsection-divider">
-                <hr class="subsection-hr">
-                <span class="subsection-header">Early Concepts</span>
-                <hr class="subsection-hr">
-            </div>
-            <div class="subsection-wrapper">
-                <img class="subsection-photo" src="../src/images/hardware/initial_concept_draft.png">
-                <div class="subsection-description text-card">
-                    <span class="subsection-header">Initial Concept Draft</span>
-                    <span class="subsection-body">
-                        Our Initial concept for this project was built around an idea of using two mechanical 
-                        rollers on either side of a self-recipricating screw. However this design had many flaws
-                        which were then addressed by later designs. The first of which is this design would place 
-                        the user's full weight on the screw and outer guide rails. Secondly, this design had no means 
-                        supporting the cushion above the roller leading to sagging and potentially safety concerns with 
-                        moving parts.
-                    </span>
-                </div>
-            </div>
-            <div class="subsection-wrapper mobile-col-reverse">
-                <div class="subsection-description text-card">
-                    <span class="subsection-header">Fixing The Issues</span>
-                    <span class="subsection-body">
-                        We realized that we could solve the two major issues of the initial design concept with one solution. 
-                        By using a flexible sheet of lexan placed between the roller and the cushion we're able to fix the 
-                        issue of the cushion not being supported outside of the roller while simultaneously distributing 
-                        the force of the roller to reduce peak pressure on the user. Similiarly, flexible lexan also greatly reduces 
-                        the risk of pinching from the moving parts underneath.
-                    </span>
-                </div>
-                <img class="subsection-photo" src="../src/images/hardware/lexan_solution_concept.png">
-            </div>
-        </section>
-
-        <!-- CAD Models -->
+        <!-- System Block Diagram -->
         <section class="main-sections-wrapper flex-col-c-c full-width" id="sbd">
             <div class="subsection-divider">
                 <hr class="subsection-hr">
-                <span class="subsection-header">Cad Models</span>
+                <span class="subsection-header">System Block Diagram</span>
                 <hr class="subsection-hr">
             </div>
-
-            <div class="subsection-description text-card">
-                <span class="subsection-body">
-                    CAD models will be added at a later date when we have more time to update the website.
-                </span>
+            <div class="subsection-wrapper" id="sbd-wrapper">
+                <img class="subsection-photo" src="../src/images/sbd.png">
+                <div class="subsection-description text-card">
+                    <span class="subsection-header">SBD</span>
+                    <span class="subsection-body">
+                        Our system block diagram demonstrates the main core functionality of what our 
+                        devices is supposed to do and how it operates. As shown we are designing a cushion
+                        that can be placed on an existing wheelchair, this cushion has a mechanical roller 
+                        inside driven by a stepper motor and supported by a linear guide garriage. The motor 
+                        is controlled by the microcontroller which the user interfaces with via a bluetooth 
+                        connection with their phone.
+                    </span>
+                </div>
             </div>
+        </section>
 
-            <!--
-            <div class="subsection-wrapper" id="identify-the-problem-background">
+        <!-- Functional Block Diagram -->
+        <section class="main-sections-wrapper flex-col-c-c full-width" id="fbd">
+            <div class="subsection-divider">
+                <hr class="subsection-hr">
+                <span class="subsection-header">Functional Block Diagram</span>
+                <hr class="subsection-hr">
+            </div>
+            <div class="subsection-wrapper mobile-col-reverse" id="fbd-wrapper">
                 <div class="subsection-description text-card">
                     <span class="subsection-header">FBD</span>
                     <span class="subsection-body">
@@ -132,7 +121,6 @@
                 </div>
                 <img class="subsection-photo" src="../src/images/fbd.png">
             </div>
-        -->
         </section>
 
         
