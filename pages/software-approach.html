@@ -52,16 +52,16 @@
         <section class="main-sections-wrapper">
             <div class="flex-row-c-c flex-wrap-w full-width full-height">
                 <span class="section-title centered-text">Software Overview</span>
-                
+
                 <div class="flex-col-c-c section-description">
                     <p>
-                        A thorough breakdown of the software will be added to the website when we 
-                        have more time after this project is complete and the deliverables have been delivered.
+                        A quick description of the software developed over the course of this project. A more detailed
+                        breakdown can be found at our github.
                     </p>
                     <a href="#technology-used" class="main-btn" id="learn-more-button">Learn More</a>
 
                 </div>
-                
+
 
             </div>
         </section>
@@ -150,6 +150,97 @@
                         <img class="modal-image" src="../src/images/flowcharts/companion_app_flowchart.png ">
                     </div>
                 </div>
+        </section>
+        <section class="main-sections-wrapper flex-col-c-c full-width" id="software-screenshots">
+            <div class="subsection-divider">
+                <hr class="subsection-hr">
+                <span class="subsection-header">Software Screenshots</span>
+                <hr class="subsection-hr">
+            </div>
+
+            <!-- The Main Images used for the slideshow -->
+            <div class="modal-gallery-container flex-row-c-c flex-wrap-w">
+                <div class="modal-item-wrapper flex-col-c-c">
+                    <img class="modal-thumbnail" src="../src/images/app-screenshots/Bluetooth_off.jpg">
+                    <span class="modal-title">Bluetooth Off Screen</span>
+                    <div class="modal flex-row-c-c flex-wrap-w  full-width">
+                        <span class="exit-modal">&times;</span>
+                        <img class="modal-image" src="../src/images/app-screenshots/Bluetooth_off.jpg">
+                    </div>
+                </div>
+                <div class="modal-item-wrapper flex-col-c-c">
+                    <img class="modal-thumbnail" src="../src/images/app-screenshots/connection_screen.jpg">
+                    <span class="modal-title">Connection Screen</span>
+                    <div class="modal flex-row-c-c flex-wrap-w  full-width">
+                        <span class="exit-modal">&times;</span>
+                        <img class="modal-image" src="../src/images/app-screenshots/connection_screen.jpg">
+                    </div>
+                </div>
+                <div class="modal-item-wrapper flex-col-c-c">
+                    <img class="modal-thumbnail" src="../src/images/app-screenshots/main_screen.jpg">
+                    <span class="modal-title">Main Screen</span>
+                    <div class="modal flex-row-c-c flex-wrap-w  full-width">
+                        <span class="exit-modal">&times;</span>
+                        <img class="modal-image" src="../src/images/app-screenshots/main_screen.jpg">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="main-sections-wrapper flex-col-c-c full-width" id="software-Descriptions">
+            <div class="subsection-divider">
+                <hr class="subsection-hr">
+                <span class="subsection-header">Software Descriptions</span>
+                <hr class="subsection-hr">
+            </div>
+
+            <!-- The Main Images used for the slideshow -->
+            <div class="subsection-wrapper" id="identify-the-problem-background">
+                <div class="dev-icon-wrapper centered-text">
+                    <img class="dev-icon"
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-plain.svg" />
+                    <hr class="dev-icon-hr">
+                    <span class="main-subtitle">Flutter</span>
+                </div>
+                <div class="subsection-description text-card">
+                    <span class="subsection-header">Companion App</span>
+                    <span class="subsection-body">
+                        Our cross-platform companion application is developed using the framework 
+                        Flutter, ensuring a seamless and user-friendly experience 
+                        while also providing invaluable debugging information for streamlined 
+                        development. Leveraging the power of the Flutter_Blue_Plus package, our 
+                        app monitors the Bluetooth device status, automatically scanning 
+                        for the HM-11 module used with our hardware. Once a connection is established, 
+                        the main screen empowers the user to modify the values utilized by the embedded 
+                        system for precise calculation of the STEP signal required by the 
+                        stepper motor. With a simple and intuitive interface, users have the 
+                        flexibility to enable/disable and adjust the speed within the range of 
+                        0-100% with utmost ease and control.
+                    </span>
+                    <p class="subsection-footer">A more detailed breakdown can be found at our github.</p>
+                </div>
+            </div>
+            <div class="subsection-wrapper" id="identify-the-problem-background">
+                <div class="dev-icon-wrapper centered-text">
+                    <img class="dev-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-plain.svg" />
+                    <hr class="dev-icon-hr">
+                    <span class="main-subtitle">C</span>
+                </div>
+                <div class="subsection-description text-card">
+                    <span class="subsection-header">Embedded System</span>
+                    <span class="subsection-body">
+                        The embedded system developed for the MSP430F45994 microcontroller leverages UART 
+                        communication to interface with the HM-11 Bluetooth module. The system uses the UART 
+                        protocol to establish a bidirectional communication link with a Bluetooth-enabled 
+                        device. Incoming data from the Bluetooth module is parsed and processed to extract 
+                        control commands for the stepper motor. The embedded system utilizes these commands 
+                        to dynamically adjust the stepper motor's speed while limit switches change the 
+                        stepper motor's direction. This integration of Bluetooth and stepper motor control 
+                        offers a versatile and efficient solution for wireless control.
+                    </span>
+                    <p class="subsection-footer">A more detailed breakdown can be found at our github.</p>
+
+                </div>
+            </div>
         </section>
     </div>
 

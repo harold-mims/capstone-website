@@ -357,6 +357,11 @@ body {
     padding: 2vh;
 }
 
+.subsection-footer {
+    padding: 2vh;
+    text-align: center;
+}
+
 /* Styling for Our Solution */
 #our-solution-wrapper,
 #our-specifications-wrapper {
