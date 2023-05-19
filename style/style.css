@@ -139,6 +139,7 @@ body {
 
 /* All classes that are a center justified center aligned flex column */
 .tech-card,
+#final-card,
 .dev-icon-wrapper,
 .flex-col-c-c {
     display: flex;
@@ -330,8 +331,9 @@ body {
 }
 
 /* Styling For The Identifying The Problem */
-.subsection-photo {
-    min-width: 50px;
+.subsection-photo,
+#demo-video {
+    min-width: 20px;
     max-width: 40%;
     min-height: 50px;
     max-height: 50%;
@@ -411,9 +413,26 @@ body {
     transition-property: max-width;
     transition-duration: 0.2s;
 }
+#final-card {
+    background-color: var(--secondary-bg-color);
+    border-radius: 1vh;
+    margin: 2.5vh;
+
+    max-width: 50vh;
+    
+    transition-property: max-width;
+    transition-duration: 0.2s;
+}
 
 .tech-card:hover {
     max-width: 27vh;
+    transition-property: max-width;
+    transition-duration: 0.2s;
+
+}
+
+#final-card:hover {
+    max-width: 57vh;
     transition-property: max-width;
     transition-duration: 0.2s;
 
@@ -574,7 +593,8 @@ body {
         padding: 1vh
     }
 
-    .subsection-photo {
+    .subsection-photo,
+    #demo-video {
         min-width: 50px;
         max-width: 80%;
         min-height: 50px;
