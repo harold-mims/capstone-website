@@ -424,6 +424,17 @@ body {
     transition-duration: 0.2s;
 }
 
+
+#model-viewer {
+    min-width: 50vh;
+    max-width: 75vh;
+    min-height:50vh;
+    max-height: 75vh;
+
+    border: 0;
+    border-radius: 5px;
+}
+
 .tech-card:hover {
     max-width: 27vh;
     transition-property: max-width;
@@ -437,6 +448,7 @@ body {
     transition-duration: 0.2s;
 
 }
+
 
 .tech-card-photo {
     border-top-left-radius: inherit;
