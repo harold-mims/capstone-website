@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title of Website -->
+    <title>LMS - Capstone</title>
+    <!-- Link to the CSS file -->
+    
+    
+    
+    <!-- Link to the Javascript File -->
+    
+  <script type="module" crossorigin src="/assets/modulepreload-polyfill-3cfb730f.js"></script>
+  <script type="module" crossorigin src="/assets/script-4d071f63.js"></script>
+  <script type="module" crossorigin src="/assets/main-29aee4df.js"></script>
+  <script type="module" crossorigin src="/assets/final_prototype-054ee6e3.js"></script>
+  <link rel="stylesheet" href="/assets/index-8128e7ac.css">
+  <link rel="stylesheet" href="/assets/final-prototype-cec80d9c.css">
+</head>
+
+<body class="content">
+    <!-- Navigation Bar -->
+    <div class="header centered-text">
+        <div class="reponsive-top-bar">
+            <a href="../index.html#home" class="header-logo">&#955;</a>
+            <a href="javascript:void(0);" class="icon" onclick="toggleNavMenu()">&#9776;</a>
+        </div>
+
+        <!-- Navigation Menu -->
+        <nav class="header-nav" id="nav-menu-responsive">
+
+            <a href="../index.html">Home</a>
+            <a href="hardware-approach.html">Hardware</a>
+            <a href="software-approach.html">Software</a>
+            <a href="sbd-fbd-approach.html">SBD / FBD</a>
+            <a href="specifications.html">Specifications</a>
+            <a href="final-prototype.html">Final Prototype</a>
+
+            <!-- Dropdown Menu For Technical Approach 
+            <div class="dropdown-wrapper">
+                <a href="../index.html#technical-approach">
+                    <button class="dropdown-btn content">Technical Approach</button>
+                </a>
+                <div class="dropdown-items-wrapper">
+                    <a href="hardware-approach.html">Hardware</a>
+                    <a href="software-approach.html">Software</a>
+                    <a href="fbd-approach.html">FBD</a>
+                    <a href="specifications.html">Specifications</a>
+                </div>
+            </div> -->
+        </nav>
+    </div>
+
+    <!-- Main content -->
+    <div class="flex-col-c-c .full-width">
+        <section class="main-sections-wrapper">
+            <div class="flex-row-c-c flex-wrap-w full-width full-height">
+                <span class="section-title centered-text">Software Overview</span>
+
+                <div class="flex-col-c-c section-description">
+                    <p>
+                        A quick description of the software developed over the course of this project. A more detailed
+                        breakdown can be found at our github.
+                    </p>
+                    <a href="#technology-used" class="main-btn" id="learn-more-button">Learn More</a>
+
+                </div>
+
+
+            </div>
+        </section>
+
+        <section class="main-sections-wrapper flex-col-c-c full-width" id="technology-used">
+            <div class="subsection-divider">
+                <hr class="subsection-hr">
+                <span class="subsection-header">Technology Used</span>
+                <hr class="subsection-hr">
+            </div>
+            <div class="tech-used-wrapper">
+                <div id="github-link">
+                    <div class="dev-icon-wrapper centered-text">
+                        <a target="_blank" href="https://github.com/stars/harold-mims/lists/tamu-lms-capstone">
+                            <img class="dev-icon" id="github-link-icon"
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" />
+                        </a>
+                        <hr class="dev-icon-hr">
+                        <span class="main-subtitle">Project Github Repos</span>
+
+                    </div>
+                </div>
+                <div class="dev-icons-container">
+                    <div class="dev-icon-wrapper centered-text">
+                        <img class="dev-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-plain.svg" />
+                        <hr class="dev-icon-hr">
+                        <span class="main-subtitle">C</span>
+                    </div>
+                    <div class="dev-icon-wrapper centered-text">
+                        <img class="dev-icon"
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-plain.svg" />
+                        <hr class="dev-icon-hr">
+                        <span class="main-subtitle">Flutter</span>
+                    </div>
+                    <div class="dev-icon-wrapper centered-text">
+                        <img class="dev-icon"
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dart/dart-plain.svg" />
+                        <hr class="dev-icon-hr">
+                        <span class="main-subtitle">Dart</span>
+                    </div>
+                    <div class="dev-icon-wrapper centered-text">
+                        <img class="dev-icon"
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-plain.svg" />
+                        <hr class="dev-icon-hr">
+                        <span class="main-subtitle">Git</span>
+                    </div>
+                    <div class="dev-icon-wrapper centered-text">
+                        <img class="dev-icon"
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-plain.svg" />
+                        <hr class="dev-icon-hr">
+                        <span class="main-subtitle">VS Code</span>
+                    </div>
+                    <div class="dev-icon-wrapper centered-text">
+                        <hr class="dev-icon-hr">
+                        <span class="main-subtitle">CCS</span>
+                    </div>
+                    <div class="dev-icon-wrapper centered-text">
+                        <hr class="dev-icon-hr">
+                        <span class="main-subtitle">Bluetooth</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="main-sections-wrapper flex-col-c-c full-width" id="software-flow-charts">
+            <div class="subsection-divider">
+                <hr class="subsection-hr">
+                <span class="subsection-header">Software Flowcharts</span>
+                <hr class="subsection-hr">
+            </div>
+
+            <!-- The Main Images used for the slideshow -->
+            <div class="modal-gallery-container flex-row-c-c flex-wrap-w">
+                <div class="modal-item-wrapper flex-col-c-c">
+                    <img class="modal-thumbnail" src="/assets/mcu-flowchart-89b2bef1.png">
+                    <span class="modal-title">MCU Flowchart</span>
+                    <div class="modal flex-row-c-c flex-wrap-w  full-width">
+                        <span class="exit-modal">&times;</span>
+                        <img class="modal-image" src="/assets/mcu-flowchart-89b2bef1.png">
+                    </div>
+                </div>
+                <div class="modal-item-wrapper flex-col-c-c">
+                    <img class="modal-thumbnail" src="/assets/companion_app_flowchart-399c7da1.png">
+                    <span class="modal-title">Companion App Flowchart</span>
+                    <div class="modal flex-row-c-c flex-wrap-w  full-width">
+                        <span class="exit-modal">&times;</span>
+                        <img class="modal-image" src="../src/images/flowcharts/companion_app_flowchart.png ">
+                    </div>
+                </div>
+        </section>
+        <section class="main-sections-wrapper flex-col-c-c full-width" id="software-screenshots">
+            <div class="subsection-divider">
+                <hr class="subsection-hr">
+                <span class="subsection-header">Software Screenshots</span>
+                <hr class="subsection-hr">
+            </div>
+
+            <!-- The Main Images used for the slideshow -->
+            <div class="modal-gallery-container flex-row-c-c flex-wrap-w">
+                <div class="modal-item-wrapper flex-col-c-c">
+                    <img class="modal-thumbnail" src="/assets/Bluetooth_off-96267154.jpg">
+                    <span class="modal-title">Bluetooth Off Screen</span>
+                    <div class="modal flex-row-c-c flex-wrap-w  full-width">
+                        <span class="exit-modal">&times;</span>
+                        <img class="modal-image" src="/assets/Bluetooth_off-96267154.jpg">
+                    </div>
+                </div>
+                <div class="modal-item-wrapper flex-col-c-c">
+                    <img class="modal-thumbnail" src="/assets/connection_screen-5e35f99b.jpg">
+                    <span class="modal-title">Connection Screen</span>
+                    <div class="modal flex-row-c-c flex-wrap-w  full-width">
+                        <span class="exit-modal">&times;</span>
+                        <img class="modal-image" src="/assets/connection_screen-5e35f99b.jpg">
+                    </div>
+                </div>
+                <div class="modal-item-wrapper flex-col-c-c">
+                    <img class="modal-thumbnail" src="/assets/main_screen-14a5b5e6.jpg">
+                    <span class="modal-title">Main Screen</span>
+                    <div class="modal flex-row-c-c flex-wrap-w  full-width">
+                        <span class="exit-modal">&times;</span>
+                        <img class="modal-image" src="/assets/main_screen-14a5b5e6.jpg">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="main-sections-wrapper flex-col-c-c full-width" id="software-Descriptions">
+            <div class="subsection-divider">
+                <hr class="subsection-hr">
+                <span class="subsection-header">Software Descriptions</span>
+                <hr class="subsection-hr">
+            </div>
+
+            <!-- The Main Images used for the slideshow -->
+            <div class="subsection-wrapper" id="identify-the-problem-background">
+                <div class="dev-icon-wrapper centered-text">
+                    <img class="dev-icon"
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-plain.svg" />
+                    <hr class="dev-icon-hr">
+                    <span class="main-subtitle">Flutter</span>
+                </div>
+                <div id="github-link">
+                    <div class="dev-icon-wrapper centered-text">
+                        <a target="_blank" href="https://github.com/harold-mims/LMS-Companion-App">
+                            <img class="dev-icon" id="github-link-icon"
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" />
+                        </a>
+                        <hr class="dev-icon-hr">
+                        <span class="main-subtitle">Companion App Repo</span>
+
+                    </div>
+                </div>
+                <div class="subsection-description text-card">
+                    <span class="subsection-header">Companion App</span>
+                    <span class="subsection-body">
+                        Our cross-platform companion application is developed using the framework 
+                        Flutter, ensuring a seamless and user-friendly experience 
+                        while also providing invaluable debugging information for streamlined 
+                        development. Leveraging the power of the Flutter_Blue_Plus package, our 
+                        app monitors the Bluetooth device status, automatically scanning 
+                        for the HM-11 module used with our hardware. Once a connection is established, 
+                        the main screen empowers the user to modify the values utilized by the embedded 
+                        system for precise calculation of the STEP signal required by the 
+                        stepper motor. With a simple and intuitive interface, users have the 
+                        flexibility to enable/disable and adjust the speed within the range of 
+                        0-100% with utmost ease and control.
+                    </span>
+                    <p class="subsection-footer">A more detailed breakdown can be found at our github.</p>
+                </div>
+            </div>
+            <div class="subsection-wrapper" id="identify-the-problem-background">
+                <div class="dev-icon-wrapper centered-text">
+                    <img class="dev-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-plain.svg" />
+                    <hr class="dev-icon-hr">
+                    <span class="main-subtitle">C</span>
+                </div>
+                <div id="github-link">
+                    <div class="dev-icon-wrapper centered-text">
+                        <a target="_blank" href="https://github.com/harold-mims/LMS_MSP430">
+                            <img class="dev-icon" id="github-link-icon"
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" />
+                        </a>
+                        <hr class="dev-icon-hr">
+                        <span class="main-subtitle">Embedded System Repo</span>
+
+                    </div>
+                </div>
+                <div class="subsection-description text-card">
+                    <span class="subsection-header">Embedded System</span>
+                    <span class="subsection-body">
+                        The embedded system developed for the MSP430F45994 microcontroller leverages UART 
+                        communication to interface with the HM-11 Bluetooth module. The system uses the UART 
+                        protocol to establish a bidirectional communication link with a Bluetooth-enabled 
+                        device. Incoming data from the Bluetooth module is parsed and processed to extract 
+                        control commands for the stepper motor. The embedded system utilizes these commands 
+                        to dynamically adjust the stepper motor's speed while limit switches change the 
+                        stepper motor's direction. This integration of Bluetooth and stepper motor control 
+                        offers a versatile and efficient solution for wireless control.
+                    </span>
+                    <p class="subsection-footer">A more detailed breakdown can be found at our github.</p>
+
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div class="footer">
+        <span>Texas A&M University Capstone Project</span>
+
+    </div>
+</body>
+
+</html>

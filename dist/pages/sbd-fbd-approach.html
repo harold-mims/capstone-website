@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title of Website -->
+    <title>LMS - Capstone</title>
+    <!-- Link to the CSS file -->
+    
+    
+    
+    <link rel="stylesheet" href="../style/fbd.css">
+    <!-- Link to the Javascript File -->
+    
+  <script type="module" crossorigin src="/assets/modulepreload-polyfill-3cfb730f.js"></script>
+  <script type="module" crossorigin src="/assets/script-4d071f63.js"></script>
+  <script type="module" crossorigin src="/assets/main-29aee4df.js"></script>
+  <script type="module" crossorigin src="/assets/final_prototype-054ee6e3.js"></script>
+  <link rel="stylesheet" href="/assets/index-8128e7ac.css">
+  <link rel="stylesheet" href="/assets/final-prototype-cec80d9c.css">
+</head>
+
+<body class="content">
+    <!-- Navigation Bar -->
+    <div class="header centered-text">
+        <div class="reponsive-top-bar">
+            <a href="../index.html#home" class="header-logo">&#955;</a>
+            <a href="javascript:void(0);" class="icon" onclick="toggleNavMenu()">&#9776;</a>
+        </div>
+
+        <!-- Navigation Menu -->
+        <nav class="header-nav" id="nav-menu-responsive">
+
+            <a href="../index.html">Home</a>
+            <a href="hardware-approach.html">Hardware</a>
+            <a href="software-approach.html">Software</a>
+            <a href="sbd-fbd-approach.html">SBD / FBD</a>
+            <a href="specifications.html">Specifications</a>
+            <a href="final-prototype.html">Final Prototype</a>
+
+            <!-- Dropdown Menu For Technical Approach 
+            <div class="dropdown-wrapper">
+                <a href="../index.html#technical-approach">
+                    <button class="dropdown-btn content">Technical Approach</button>
+                </a>
+                <div class="dropdown-items-wrapper">
+                    <a href="hardware-approach.html">Hardware</a>
+                    <a href="software-approach.html">Software</a>
+                    <a href="fbd-approach.html">FBD</a>
+                    <a href="specifications.html">Specifications</a>
+                </div>
+            </div> -->
+        </nav>
+    </div>
+    <div></div>
+
+    <!-- Main content 
+    <div class="flex-col-c-c .full-width">
+        <section class="main-sections-wrapper flex-col-c-c full-width" id="fbd-wrapper">
+            <span class="main-title">Functional Block Diagram</span>
+            <hr class="section-hr">
+            <img id="fbd-photo" src="../src/images/fbd.png">
+        </section>
+    </div>-->
+
+    <!-- Main content -->
+    <div class="flex-col-c-c .full-width">
+        <section class="main-sections-wrapper">
+            <div class="flex-row-c-c flex-wrap-w full-width full-height">
+                <span class="section-title centered-text">System and Function Block Diagrams</span>
+                
+                <div class="flex-col-c-c section-description">
+                    <p>
+                        A Visual Representation Of The Core Design And Function Of Our Project.
+                    </p>
+                    <a href="#sbd" class="main-btn" id="learn-more-button">Learn More</a>
+
+                </div>
+                
+
+            </div>
+        </section>
+
+        <!-- System Block Diagram -->
+        <section class="main-sections-wrapper flex-col-c-c full-width" id="sbd">
+            <div class="subsection-divider">
+                <hr class="subsection-hr">
+                <span class="subsection-header">System Block Diagram</span>
+                <hr class="subsection-hr">
+            </div>
+            <div class="subsection-wrapper" id="sbd-wrapper">
+                <img class="subsection-photo" src="/assets/sbd-a9c2207b.png">
+                <div class="subsection-description text-card">
+                    <span class="subsection-header">SBD</span>
+                    <span class="subsection-body">
+                        Our system block diagram demonstrates the main core functionality of what our 
+                        devices is supposed to do and how it operates. As shown we are designing a cushion
+                        that can be placed on an existing wheelchair, this cushion has a mechanical roller 
+                        inside driven by a stepper motor and supported by a linear guide garriage. The motor 
+                        is controlled by the microcontroller which the user interfaces with via a bluetooth 
+                        connection with their phone.
+                    </span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Functional Block Diagram -->
+        <section class="main-sections-wrapper flex-col-c-c full-width" id="fbd">
+            <div class="subsection-divider">
+                <hr class="subsection-hr">
+                <span class="subsection-header">Functional Block Diagram</span>
+                <hr class="subsection-hr">
+            </div>
+            <div class="subsection-wrapper mobile-col-reverse" id="fbd-wrapper">
+                <div class="subsection-description text-card">
+                    <span class="subsection-header">FBD</span>
+                    <span class="subsection-body">
+                        The functional block diagram shows a more detailed example of what's shown in the SBD. 
+                        Following the flow of power through the system, with power coming from either a 12 V battery 
+                        or a 24 V battery. This power is then either regulated to a voltage compatible with the 
+                        microcontroller or fed into the motor driver.
+
+                        The microcontroller then gives power to the various modules as needed while handling the UART, 
+                        GPIO, and STEP/DIR signals at a value 3.3 V.
+                    </span>
+                </div>
+                <img class="subsection-photo" src="/assets/fbd-55b2f9fe.png">
+            </div>
+        </section>
+
+        
+    </div>
+
+    <div class="footer">
+        <span>Texas A&M University Capstone Project</span>
+
+    </div>
+</body>
+
+</html>

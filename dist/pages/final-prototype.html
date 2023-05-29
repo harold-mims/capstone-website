@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title of Website -->
+    <title>LMS - Capstone</title>
+    <!-- Link to the CSS file -->
+    
+    
+    
+    <!-- Link to the Javascript File -->
+    
+  <script type="module" crossorigin src="/assets/modulepreload-polyfill-3cfb730f.js"></script>
+  <script type="module" crossorigin src="/assets/script-4d071f63.js"></script>
+  <link rel="stylesheet" href="/assets/final-prototype-cec80d9c.css">
+</head>
+
+<body class="content">
+    <!-- Navigation Bar -->
+    <div class="header centered-text">
+        <div class="reponsive-top-bar">
+            <a href="../index.html#home" class="header-logo">&#955;</a>
+            <a href="javascript:void(0);" class="icon" onclick="toggleNavMenu()">&#9776;</a>
+        </div>
+
+        <!-- Navigation Menu -->
+        <nav class="header-nav" id="nav-menu-responsive">
+
+            <a href="../index.html">Home</a>
+            <a href="hardware-approach.html">Hardware</a>
+            <a href="software-approach.html">Software</a>
+            <a href="sbd-fbd-approach.html">SBD / FBD</a>
+            <a href="specifications.html">Specifications</a>
+            <a href="final-prototype.html">Final Prototype</a>
+            
+            <!-- Dropdown Menu For Technical Approach 
+            <div class="dropdown-wrapper">
+                <a href="../index.html#technical-approach">
+                    <button class="dropdown-btn content">Technical Approach</button>
+                </a>
+                <div class="dropdown-items-wrapper">
+                    <a href="hardware-approach.html">Hardware</a>
+                    <a href="software-approach.html">Software</a>
+                    <a href="fbd-approach.html">FBD</a>
+                    <a href="specifications.html">Specifications</a>
+                </div>
+            </div> -->
+        </nav>
+    </div>
+
+    <!-- Main content -->
+    <div class="flex-col-c-c .full-width">
+        <section class="main-sections-wrapper">
+            <div class="flex-row-c-c flex-wrap-w full-width full-height">
+                <span class="section-title centered-text">Final Prototype</span>
+
+                <div class="flex-col-c-c section-description">
+                    <p>
+                        A quick description of the final prototype of our project, what we learned from 
+                        the experience, and what we'd do differently moving forward.
+                    </p>
+                    <a href="#final-demo" class="main-btn" id="learn-more-button">Learn More</a>
+
+                </div>
+
+
+            </div>
+        </section>
+
+        <!-- Early Concepts -->
+        <section class="main-sections-wrapper flex-col-c-c full-width" id="final-demo">
+            <div class="subsection-divider">
+                <hr class="subsection-hr">
+                <span class="subsection-header">Early Concepts</span>
+                <hr class="subsection-hr">
+            </div>
+            <div class="subsection-wrapper">
+                
+                <video controls id="demo-video">
+                    <source src="/assets/demo video-90cd83c3.mp4" type="video/mp4">
+                    Download the
+                    <a href="../src/images/hardware/Final Device/demo video.mp4">MP$</a>
+                </video>
+                <div class="subsection-description text-card">
+                    <span class="subsection-header">Demo Video and Operation</span>
+                    <span class="subsection-body">
+                        In the video demonstration, the roller mechanism operates through a high-torque stepper motor 
+                        integrated with a drive screw. Upon reaching the end of the track, the carriage triggers a 
+                        limit switch, effectively toggling the direction signal and reversing the stepper motor's 
+                        rotation. To optimize user comfort and enhance blood flow, a strategically placed lexan 
+                        sheet on top of the enclosure evenly distributes the roller's force across a larger 
+                        surface area. This design minimizes overall pressure on the user while maintaining the 
+                        beneficial pressure wave effect.
+                    </span>
+                </div>
+            </div>
+            <div class="subsection-wrapper mobile-col-reverse">
+                <div class="subsection-description text-card">
+                    <span class="subsection-header">Known Issues And Solutions</span>
+                    <span class="subsection-body">
+                        The first and most obvious Issue with the design is the height at which the box sits in the chair. 
+                        While this is less than ideal the purpose of our project was to design a proof of concept using 
+                        primarily off the shelf components. With this restriction we used a readily available metal enclosure 
+                        that we were confident would be strong enough to support the user however the heights available 
+                        were less than ideal.
+                    </span>
+                    <span class="subsection-body">
+                        Another known issue is that if the maximum safe stepper motor speed is set too high when the limit switch 
+                        is triggered it can lead to an issue where the stepper motor will slow down to a fraction of it's set speed.
+                        This issue was discovered extremely late into development and as a result we were unable to be accurately diagnosed.
+                        Although by reducing the maximum speed to a more reasonable and safe value the issue was resolved.
+                    </span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Finished Photos -->
+        <section class="main-sections-wrapper flex-col-c-c full-width" id="sbd">
+            <div class="subsection-divider">
+                <hr class="subsection-hr">
+                <span class="subsection-header">Prototype Pictures</span>
+                <hr class="subsection-hr">
+            </div>
+            <div class="modal-gallery-container flex-row-c-c flex-wrap-w">
+                <div class="modal-item-wrapper flex-col-c-c">
+                    <img class="modal-thumbnail" src="/assets/device-in-chair-40bfbd8c.jpg">
+                    <span class="modal-title">Assembly Isometric View</span>
+                    <div class="modal flex-row-c-c flex-wrap-w  full-width">
+                        <span class="exit-modal">&times;</span>
+                        <img class="modal-image" src="/assets/device-in-chair-40bfbd8c.jpg">
+                    </div>
+                </div>
+                <div class="modal-item-wrapper flex-col-c-c">
+                    <img class="modal-thumbnail" src="/assets/top-forward-view-75fbe26f.jpg">
+                    <span class="modal-title">Assembly Side View</span>
+                    <div class="modal flex-row-c-c flex-wrap-w  full-width">
+                        <span class="exit-modal">&times;</span>
+                        <img class="modal-image" src="/assets/top-forward-view-75fbe26f.jpg">
+                    </div>
+                </div>
+                <div class="modal-item-wrapper flex-col-c-c">
+                    <img class="modal-thumbnail" src="/assets/top-forward-battery-1b2ceb90.jpg">
+                    <span class="modal-title">Assembly Top View</span>
+                    <div class="modal flex-row-c-c flex-wrap-w  full-width">
+                        <span class="exit-modal">&times;</span>
+                        <img class="modal-image" src="/assets/top-forward-battery-1b2ceb90.jpg">
+                    </div>
+                </div>
+                <div class="modal-item-wrapper flex-col-c-c">
+                    <img class="modal-thumbnail" src="/assets/iso-view-7a4e4b1b.jpg">
+                    <span class="modal-title">Assembly Top View</span>
+                    <div class="modal flex-row-c-c flex-wrap-w  full-width">
+                        <span class="exit-modal">&times;</span>
+                        <img class="modal-image" src="/assets/iso-view-7a4e4b1b.jpg">
+                    </div>
+                </div>
+                <div class="modal-item-wrapper flex-col-c-c">
+                    <img class="modal-thumbnail" src="/assets/internal-connections-5d8312ef.jpg">
+                    <span class="modal-title">Assembly Top View</span>
+                    <div class="modal flex-row-c-c flex-wrap-w  full-width">
+                        <span class="exit-modal">&times;</span>
+                        <img class="modal-image" src="/assets/internal-connections-5d8312ef.jpg">
+                    </div>
+                </div>
+                <div class="modal-item-wrapper flex-col-c-c">
+                    <img class="modal-thumbnail" src="/assets/top-cuts-closeup-8cb5fb7e.jpg">
+                    <span class="modal-title">Assembly Top View</span>
+                    <div class="modal flex-row-c-c flex-wrap-w  full-width">
+                        <span class="exit-modal">&times;</span>
+                        <img class="modal-image" src="/assets/top-cuts-closeup-8cb5fb7e.jpg">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <div class="footer">
+        <span>Texas A&M University Capstone Project</span>
+
+    </div>
+</body>
+
+</html>

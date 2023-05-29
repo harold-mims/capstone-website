@@ -3,10 +3,17 @@ import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls'
 import { STLLoader } from 'three/examples/jsm/loaders/STLLoader'
 import Stats from 'three/examples/jsm/libs/stats.module'
 
+import model_path from '../src/Full_Assembly.stl?url'
+//import model_path from '/src/cube.stl'
+
+
 const scene = new THREE.Scene()
 //scene.background = new THREE.Color(0xf5f5f5);
-const rederer_div = document.getElementById("renderer-window");
 scene.add(new THREE.AxesHelper(5))
+const rederer_div = document.getElementById("renderer-window");
+
+//const model = document.getElementById("model-load-script").getAttribute("model");
+////const model_ = document.getElementById("model-load-script").model;
 
 //const light = new THREE.SpotLight()
 //light.position.set(0,0,40)
@@ -35,22 +42,9 @@ rederer_div.appendChild(renderer.domElement)
 const controls = new OrbitControls(camera, renderer.domElement)
 controls.enableDamping = true
 
-const envTexture = new THREE.CubeTextureLoader().load([
-    '../../src/images/envTexture/px_50.png',
-    '../../src/images/envTexture/nx_50.png',
-    '../../src/images/envTexture/py_50.png',
-    '../../src/images/envTexture/ny_50.png',
-    '../../src/images/envTexture/pz_50.png',
-    '../../src/images/envTexture/nz_50.png'
-
-
-])
-envTexture.mapping = THREE.CubeReflectionMapping
-
 const material = new THREE.MeshPhysicalMaterial({
     //color: 0x999999,
     color: 0x1F4AB8,
-    //envMap: envTexture,
     metalness: 0.25,
     roughness: 1,
     opacity: 0.9,
@@ -62,7 +56,9 @@ const loader = new STLLoader()
 loader.load(
     //'../../src/example.stl',
     //'../../src/Full_Assembly.stl',
-    '../../src/Full_Assembly_simplified.stl',
+    //'./3d-models/Full_Assembly.stl',
+    //'../../src/Full_Assembly_simplified.stl',
+    model_path,
 
     function (geometry) {
         geometry.center()
