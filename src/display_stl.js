@@ -54,10 +54,7 @@ const material = new THREE.MeshPhysicalMaterial({
 
 const loader = new STLLoader()
 loader.load(
-    //'../../src/example.stl',
-    //'../../src/Full_Assembly.stl',
-    //'./3d-models/Full_Assembly.stl',
-    //'../../src/Full_Assembly_simplified.stl',
+
     model_path,
 
     function (geometry) {
