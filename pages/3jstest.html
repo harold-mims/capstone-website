@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title of Website -->
+    <title>LMS - Capstone</title>
+    <!-- Link to the CSS file -->
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/gallery.css">
+    <link rel="stylesheet" href="../style/modal-image.css">
+    <!-- Link to the Javascript File -->
+    <script  type="module" src="../src/script.js" defer></script>
+    
+    
+</head>
+
+<body class="content">
+    <!-- Navigation Bar -->
+    <div class="header centered-text">
+        <div class="reponsive-top-bar">
+            <a href="../index.html#home" class="header-logo">&#955;</a>
+            <a href="javascript:void(0);" class="icon" onclick="toggleNavMenu()">&#9776;</a>
+        </div>
+
+        <!-- Navigation Menu -->
+        <nav class="header-nav" id="nav-menu-responsive">
+
+            <a href="../index.html">Home</a>
+            <a href="hardware-approach.html">Hardware</a>
+            <a href="software-approach.html">Software</a>
+            <a href="sbd-fbd-approach.html">SBD / FBD</a>
+            <a href="specifications.html">Specifications</a>
+            <a href="final-prototype.html">Final Prototype</a>
+
+
+            <!-- Dropdown Menu For Technical Approach 
+            <div class="dropdown-wrapper">
+                <a href="../index.html#technical-approach">
+                    <button class="dropdown-btn content">Technical Approach</button>
+                </a>
+                <div class="dropdown-items-wrapper">
+                    <a href="hardware-approach.html">Hardware</a>
+                    <a href="software-approach.html">Software</a>
+                    <a href="fbd-approach.html">FBD</a>
+                    <a href="specifications.html">Specifications</a>
+                </div>
+            </div> -->
+        </nav>
+    </div>
+
+    <!-- Main content -->
+    <div class="flex-col-c-c full-width full-height">
+        <section class="model-viewer-wrapper">
+            <div id="model-selection-wrapper">
+                <!--img src="../src/images/hardware/cad-model-images/assembly-iso.png"-->
+                <span>test</span>
+            </div>
+            <iframe id="model-viewer" name="model-viewer" allow="fullscreen" style="display: unset;" src="./3d-models/test.html">
+            </iframe>
+            
+        </section>
+    </div>
+</body>

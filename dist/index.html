@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title of Website -->
+    <title>LMS - Capstone</title>
+    <!-- Link to the CSS file -->
+    
+    <link rel="stylesheet" href="../style/modal-image.css">
+    <!-- Link to the Javascript File -->
+    
+  <script type="module" crossorigin src="/assets/modulepreload-polyfill-3cfb730f.js"></script>
+  <script type="module" crossorigin src="/assets/script-4d071f63.js"></script>
+  <link rel="stylesheet" href="/assets/style-346547e7.css">
+</head>
+
+<body class="content">
+    <!-- Navigation Bar -->
+    <div class="header centered-text">
+        <div class="reponsive-top-bar">
+            <a href="#home" class="header-logo">&#955;</a>
+            <a href="javascript:void(0);" class="icon" onclick="toggleNavMenu()">&#9776;</a>
+        </div>
+
+        <!-- Navigation Menu -->
+        <nav class="header-nav" id="nav-menu-responsive">
+
+            <a href="#about-us">About Us</a>
+            <a href="#identify-the-problem">The Problem</a>
+            <a href="#our-solution">Our Solution</a>
+
+            <!-- Dropdown Menu For Technical Approach -->
+            <div class="dropdown-wrapper">
+                <a href="#technical-approach">
+                    <button class="dropdown-btn content">Technical Approach</button>
+                </a>
+                <div class="dropdown-items-wrapper">
+                    <a href="pages/hardware-approach.html">Hardware</a>
+                    <a href="pages/software-approach.html">Software</a>
+                    <a href="pages/sbd-fbd-approach.html">SBD / FBD</a>
+                    <a href="pages/specifications.html">Specifications</a>
+                </div>
+            </div>
+            <a href="pages/final-prototype.html">Final Prototype</a>
+        </nav>
+    </div>
+
+    <!-- Main content -->
+    <div class="flex-col-c-c full-width">
+        <!-- Home Page -->
+        <section class="centered-text" id="home">
+            <div class="flex-col-c-c full-height">
+                <span class="main-title" style="text-align: center;">LMS - Lambda Medical Services</span>
+                <span class="main-subtitle">ESET 419/420 Capstone Project - An Active Solution For The Prevention Of
+                    Bedsores From Wheelchairs</span>
+                <!--span>This Website is still a work in progress and will be updated when we have more time at the end of
+                    the project</span-->
+                <a href="#about-us" class="main-btn" id="learn-more-button">Learn More</a>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section class="main-sections-wrapper flex-col-c-c full-width centered-text" id="about-us">
+            <div class="subsection-divider">
+                <hr class="subsection-hr">
+                <span class="subsection-header">About Us</span>
+                <hr class="subsection-hr">
+            </div>
+            <div id="team-sponsor">
+                <div class="flex-col-c-c" id="about-us-team">
+                    <div class="team-member-wrapper">
+                        <img class="team-member-photo" src="/assets/placeholder_icon-1cf59db5.jpg">
+                        <div class="team-member-description">
+                            <span class="member-role">Project Manager</span>
+                            <span class="member-name">Michael Li</span>
+                        </div>
+                    </div>
+                    <div class="team-member-wrapper">
+                        <img class="team-member-photo" src="/assets/placeholder_icon-1cf59db5.jpg">
+                        <div class="team-member-description">
+                            <span class="member-role">Research and Test Lead</span>
+                            <span class="member-name">Benjamin Harris</span>
+                        </div>
+                    </div>
+                    <div class="team-member-wrapper">
+                        <img class="team-member-photo" src="/assets/placeholder_icon-1cf59db5.jpg">
+                        <div class="team-member-description">
+                            <span class="member-role">Software and Mechanical Lead</span>
+                            <span class="member-name">Harold Mims</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-col-c-c" id="about-us-sponsor">
+                    <div class="sponsor-wrapper">
+                        <img class="team-member-photo"
+                            src="https://engineering.tamu.edu/etid/_files/_images/_profile-images/fink-rainer-profile-03March2022.jpg">
+                        <div class="team-member-description">
+                            <span class="member-role">Technical Advisor and Sponsor</span>
+                            <span class="member-name">Dr. Rainer Fink</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="subsection-wrapper" id="about-us-overview">
+                <span>This Project is a Capstone for both the ESET and MXET programs at Texas A&M University. Designed
+                    to bridge the gap between school and the industry by developing a fully functional prototype</span>
+            </div>
+        </section>
+
+        <!-- Identify The Problem -->
+        <section class="main-sections-wrapper flex-col-c-c full-width" id="identify-the-problem">
+            <div class="subsection-divider">
+                <hr class="subsection-hr">
+                <span class="subsection-header">Identifying The Problem</span>
+                <hr class="subsection-hr">
+            </div>
+            <div class="subsection-wrapper" id="identify-the-problem-background">
+                <img class="subsection-photo" src="/assets/CON_ADShoot_0759-ab5c908d.JPG">
+                <div class="subsection-description text-card">
+                    <span class="subsection-header">Background</span>
+                    <span class="subsection-body">
+                        Throughout the United States, there are over 3.3 million wheelchair users,
+                        with 1.8 million being aged 65 and older. For these individuals, bedsores
+                        are a very common issue that if left unchecked, can cause death. Elderly
+                        wheelchair users are at risk for developing bedsores due to their limited
+                        and restricted mobility. The same applies to chronic wheelchair users
+                        such as disabled veterans. The pain from bedsores also prevents users from
+                        using wheelchairs, causing them to be bedridden which will likely worsen
+                        their condition. The comfortable use of wheelchairs is necessary for the
+                        disabled populace to engage in daily activities and retain human dignity.
+                    </span>
+                </div>
+            </div>
+            <div class="subsection-wrapper" id="identify-the-problem-problem-statement">
+                <!--<img class="subsection-photo" src="src/images/CON_ADShoot_0759.JPG">-->
+                <div class="subsection-description text-card">
+                    <span class="subsection-header">Problem Statement</span>
+                    <span class="subsection-body">
+                        Full-time heelchair users are at risk for developing bedsores. Existing bedsores
+                        also cause pain and trouble in everyday activities. We believe that there are no
+                        effective existing solutions for wheelchairs to prevent bedsores.
+                    </span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Solution -->
+        <section class="main-sections-wrapper" id="our-solution">
+            <div class="subsection-divider">
+                <hr class="subsection-hr">
+                <span class="subsection-header">Our Solution</span>
+                <hr class="subsection-hr">
+            </div>
+            <div id="our-solution-wrapper">
+                <div class="subsection-wrapper" id="our-solution-project-objectives">
+                    <div class="subsection-our-solution-description text-card">
+                        <span class="subsection-header">Project Objective</span>
+                        <span class="subsection-body">
+                            To design and implement a system for the active prevention and passive treatment
+                            of bedsores through the use of a roller mechanism to encourage blood flow through
+                            high risk areas.
+                        </span>
+                    </div>
+                </div>
+                <div class="subsection-wrapper" id="our-solution-deliverables">
+                    <div class="subsection-our-solution-description text-card">
+                        <span class="subsection-header">Deliverables</span>
+                        <span class="subsection-body">
+                            A functional and contained system that the user can add to an existing chair.
+                            This system will be able to communicate with the user's phone to control the
+                            rate of the roller mechanism remotely.
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical Approach -->
+        <section class="main-sections-wrapper flex-col-c-c full-width" id="technical-approach">
+            <div class="subsection-divider">
+                <hr class="subsection-hr">
+                <span class="subsection-header">Technical Approach</span>
+                <hr class="subsection-hr">
+            </div>
+            <div class="tech-approach-content-container">
+                <div class="subsection-wrapper tech-wrapper " id="technical-approach-hardware">
+                    <a href="pages/hardware-approach.html" class="tech-card tech-card-link">
+                        <img class="tech-card-photo" src="/assets/assembly-iso-2a021314.png">
+                        <span class="subsection-header">Hardware</span>
+                    </a>
+                </div>
+                <div class="subsection-wrapper tech-wrapper" id="technical-approach-software">
+                    <a href="pages/software-approach.html" class="tech-card tech-card-link">
+                        <img class="tech-card-photo" src="/assets/software-card-b377e967.png">
+                        <span class="subsection-header">Software</span>
+                    </a>
+                </div>
+                <div class="subsection-wrapper  tech-wrapper" id="technical-approach-fbd">
+                    <a href="pages/sbd-fbd-approach.html" class="tech-card tech-card-link">
+                        <img class="tech-card-photo" src="/assets/fbd-55b2f9fe.png">
+                        <span class="subsection-header">SBD / FBD</span>
+                    </a>
+                </div>
+                <div class="subsection-wrapper  tech-wrapper" id="technical-approach-specifications">
+                    <a href="pages/specifications.html" class="tech-card tech-card-link">
+                        <img class="tech-card-photo" id="specifications-img" src="/assets/specifications-c48e323b.png">
+                        <span class="subsection-header">Specifications</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- Final Prototype -->
+        <section class="main-sections-wrapper flex-col-c-c full-width" id="sbd">
+            <div class="subsection-divider">
+                <hr class="subsection-hr">
+                <span class="subsection-header">Final Prototype</span>
+                <hr class="subsection-hr">
+            </div>
+            <div class="subsection-wrapper  final-wrapper" id="final-prototype-card">
+                <a href="pages/final-prototype.html" class="tech-card-link" id="final-card">
+                    <img class="tech-card-photo" src="/assets/top-forward-view-75fbe26f.jpg">
+                    <span class="subsection-header">Final Prototype</span>
+                </a>
+            </div>
+        </section>
+    </div>
+
+    <div class="footer">
+        <span>Texas A&M University Capstone Project</span>
+
+    </div>
+</body>
+
+</html>

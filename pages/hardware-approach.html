@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="../style/gallery.css">
     <link rel="stylesheet" href="../style/modal-image.css">
     <!-- Link to the Javascript File -->
-    <script src="../src/script.js" defer></script>
+    <script type="module" src="../src/script.js" defer></script>
 </head>
 
 <body class="content">
@@ -112,7 +112,25 @@
         <section class="main-sections-wrapper flex-col-c-c full-width" id="sbd">
             <div class="subsection-divider">
                 <hr class="subsection-hr">
-                <span class="subsection-header">Cad Models - Assembly</span>
+                <span class="subsection-header">Cad Models - Model Viewer</span>
+                <hr class="subsection-hr">
+            </div>
+            <section class="model-viewer-wrapper">
+                <div id="model-selection-wrapper">
+                    <!--img src="../src/images/hardware/cad-model-images/assembly-iso.png"-->
+                    <span>test</span>
+                </div>
+                <iframe id="model-viewer" name="model-viewer" allow="fullscreen" style="display: unset;"
+                    src="./3d-models/test.html">
+                </iframe>
+            </section>
+
+        </section>
+
+        <section class="main-sections-wrapper flex-col-c-c full-width" id="sbd">
+            <div class="subsection-divider">
+                <hr class="subsection-hr">
+                <span class="subsection-header">Cad Models - Photos - Assembly</span>
                 <hr class="subsection-hr">
             </div>
             <div class="modal-gallery-container flex-row-c-c flex-wrap-w">
@@ -150,10 +168,11 @@
                 </div>
             </div>
         </section>
+        
         <section class="main-sections-wrapper flex-col-c-c full-width" id="sbd">
             <div class="subsection-divider">
                 <hr class="subsection-hr">
-                <span class="subsection-header">Cad Models - Custom Components</span>
+                <span class="subsection-header">Cad Models - Photos - Custom Components</span>
                 <hr class="subsection-hr">
             </div>
             <div class="modal-gallery-container flex-row-c-c flex-wrap-w">
