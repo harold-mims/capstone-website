@@ -4,6 +4,13 @@
     "three": "^0.152.2"
   },
   "devDependencies": {
+    "gh-pages": "^5.0.0",
     "vite": "^4.3.9"
+  },
+  "homepage": "https://harold-mims.github.io/capstone-website/",
+  "scripts": {
+    "build": "vite build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   }
 }
