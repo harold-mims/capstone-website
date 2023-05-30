@@ -16,7 +16,7 @@
             padding: 0; 
             margin: 0;
 
-            background-image: linear-gradient(#f5f5f5, #808080);
+            background-image: linear-gradient(#f5f5f5, #808080) !important;
         }
         
         #renderer-window {
@@ -25,9 +25,10 @@
     </style>
   <script type="module" crossorigin src="/assets/modulepreload-polyfill-3cfb730f.js"></script>
   <script type="module" crossorigin src="/assets/display_stl-cbd38e0c.js"></script>
+  <link rel="stylesheet" href="/assets/style-346547e7.css">
 </head>
 
-<body>
-    <div id="renderer-window"></div>
+<body id="render-body">
+    <div id="renderer-window" style="background-image: linear-gradient(#f5f5f5, #808080);"></div>
 </body>
 </html>
