@@ -4,7 +4,6 @@ const { defineConfig } = require('vite')
 module.exports = defineConfig({
     base: '/capstone-website/',
     assetsInclude: ['**/*.stl'],
-    publicDir: 'public',
     build: {
         cssCodeSplit: false,
         rollupOptions: {

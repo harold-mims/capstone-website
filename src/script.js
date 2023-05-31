@@ -1,6 +1,17 @@
 /*
     This Function will open and close the navigation menu when the user clicks the hamburger icon
 */
+
+document.getElementById("navbutton").addEventListener('click', function(event) {
+    var arg = document.getElementById("nav-menu-responsive");
+    if (arg.className === "header-nav") {
+        arg.className += " nav-menu";
+    } else {
+        arg.className = "header-nav";
+    }
+  });
+
+/*
 function toggleNavMenu() {
     var arg = document.getElementById("nav-menu-responsive");
     if (arg.className === "header-nav") {
@@ -8,7 +19,7 @@ function toggleNavMenu() {
     } else {
         arg.className = "header-nav";
     }
-}
+}*/
 
 /* Loops through and adds an event handler to any of the gallery photos so that they can be displayed properly */
 var elements = document.getElementsByClassName("modal-thumbnail");
